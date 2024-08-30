@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./banner_images.jfif) ;
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.navbar ul li{
+   display: inline-block;
+   margin: 20px;
+   color: aliceblue;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    
+}
+
+h2{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.content{
+  
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50px);
+    text-align: center;
+    color: azure;
+}
+.content p{
+    margin-top: 20px;
+    color: aliceblue;
+    line-height: 50px;
+}
+
+.content h1{
+    margin-top: 10%;
+    font-size: 60px;
+}
+div button{
+    background-color: darkred;
+    color: aliceblue;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 140px;
+    height: 80px;
+    font-size: 15px;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+div button:hover{
+    background-color: darkgrey;
+    color: darkred;
+    transition: all 0.5s;
+
+}
+
+@media(max-width: 1200px)
+{
+ .navbar{
+    width: 90%;
+    padding: 25px 0;
+ }
+ .navbar ul li{
+    padding: 15px;
+ }
+ .content h1{
+    font-size: 50px;
+ }
+ div button{
+    padding: 15px;
+    width: 120px;
+    height: 70px;
+    font-size: 30px;
+    margin-top: 25px;
+ }
+}
+@media (max-width: 992px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    div button {
+        padding: 12px;
+        width: 100px;
+        height: 60px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .content p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    div button {
+        padding: 10px;
+        width: 90px;
+        height: 50px;
+        font-size: 11px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        margin-top: 40%;
+    }
+
+    .content p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    div button {
+        padding: 8px;
+        width: 80px;
+        height: 45px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar ul li {
+        padding: 8px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+        margin-top: 50%;
+    }
+
+    .content p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    div button {
+        padding: 6px;
+        width: 70px;
+        height: 40px;
+        font-size: 9px;
+    }
+}
